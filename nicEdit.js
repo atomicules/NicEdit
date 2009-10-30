@@ -1192,7 +1192,7 @@ var nicLinkButton = nicEditorAdvancedButton.extend({
 		this.addForm({
 			'' : {type : 'title', txt : 'Add/Edit Link'},
 			'href' : {type : 'text', txt : 'URL', value : 'http://', style : {width: '150px'}},
-			'title' : {type : 'text', txt : 'Title'},
+			'title' : {type : 'text', txt : 'Title', value : this.ne.selectedInstance.getSel()},
 			'target' : {type : 'select', txt : 'Open In', options : {'' : 'Current Window', '_blank' : 'New Window'},style : {width : '100px'}}
 		},this.ln);
 	},
